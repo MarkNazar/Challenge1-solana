@@ -5,7 +5,8 @@ const { Connection, PublicKey, clusterApiUrl, Keypair, LAMPORTS_PER_SOL } = requ
 const newPair = new Keypair();
 
 // Exact the public and private key from the keypair
-const publicKey = new PublicKey(newPair._keypair.publicKey).toString();
+// const publicKey = new PublicKey(newPair._keypair.publicKey).toString();
+const publicKey = process.argv[2];
 const privateKey = newPair._keypair.secretKey;
 
 // Connect to the Devnet
