@@ -6,7 +6,7 @@ const newPair = new Keypair();
 
 // Exact the public and private key from the keypair
 // const publicKey = new PublicKey(newPair._keypair.publicKey).toString();
-const publicKey = process.argv[2];
+const publicKey = process.argv[2]; // try to use random address after node index.js <address>
 const privateKey = newPair._keypair.secretKey;
 
 // Connect to the Devnet
